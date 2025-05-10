@@ -43,7 +43,7 @@ export const createProduct = async (req, res) => {
     console.log("New Product Added:", newProduct);
     res.status(201).json({ success: true, data: newProduct[0] });
   } catch (error) {
-    console.log("Error in CreateProduct function", error);
+    console.log("Errors in CreateProduct function", error);
     res.status(500).json({ success: false, message: "Intental Server Error" });
   }
 };
