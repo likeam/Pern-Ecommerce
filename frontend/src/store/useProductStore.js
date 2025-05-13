@@ -7,6 +7,7 @@ export const useProductStore = create((set, get) => ({
   products: [],
   loading: false,
   error: null,
+  currentProduct: null,
 
   formData: {
     name: "",
