@@ -72,7 +72,7 @@ export const useProductStore = create((set, get) => ({
     try {
       const response = await axios.get(`${BASE_URL}/api/products/${id}`);
       set({
-        products: response.data.data,
+        currentProduct: response.data.data,
         formData: response.data.data,
         error: null,
       });
